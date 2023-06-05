@@ -1,0 +1,76 @@
+generateResponseChatGPT: new prompt: questionText: How do you identify the business objective when defining the problem statement in the first stage of the data science stages?
+gptTopics: Problem Statement, Business Objectives, Data Science Process
+answers: [
+Answer(
+answerText: "By focusing on the most complex algorithms"
+correct: false
+answerExplanation: "Focusing on complex algorithms is not the right approach to identify the business objective. The objective should be determined by understanding the business needs and goals."
+),
+Answer(
+answerText: "By understanding the business needs and goals"
+correct: true
+answerExplanation: "Identifying the business objective requires understanding the business needs and goals, which helps in defining the problem statement and aligning it with the organization's objectives."
+),
+Answer(answerText: "By collecting as much data as possible"
+correct: false
+answerExplanation: "Collecting data is important, but it is not the primary method to identify the business objective. The objective should be determined by understanding the business needs and goals."
+),
+Answer(
+answerText: "By focusing on the most advanced visualization techniques"
+correct: false
+answerExplanation: "Advanced visualization techniques can help in presenting the results, but they do not help in identifying the business objective. The objective should be determined by understanding the business needs and goals."
+),
+]
+
+
+
+questionTextMatch: How do you identify the business objective when defining the problem statement in the first stage of the data science stages?
+Error: Unexpected null value.
+dart-sdk/lib/_internal/js_dev_runtime/private/ddc_runtime/errors.dart 266:49      throw_
+dart-sdk/lib/_internal/js_dev_runtime/private/ddc_runtime/operations.dart 528:63  nullCheck
+packages/gradient_valley_admin/models/content.dart 404:69                         parseQuestion
+packages/gradient_valley_admin/screens/add_question_screen.dart 163:32            <fn>
+
+FAILED HERE:
+
+  /// GPT TOPICS:
+  const String gptTopicsRegex = r'gptTopics:\s*([\s\S]+?)\n\n';
+  final RegExp gptTopicsExp = RegExp(gptTopicsRegex);
+  final String gptTopicsMatch = gptTopicsExp.firstMatch(gptOutput)!.group(1)?.trim() ?? ''; <--
+  print('PARSE gptTopicsMatch answersMatch RESULTS:\n'
+      'gptTopicsMatch: $gptTopicsMatch\n'
+
+
+2nd try: response:
+generateResponseChatGPT: new prompt: questionText: How do you identify the business objective when defining the problem statement in the first stage of the data science stages?
+gptTopics: Problem Statement, Business Objectives, Data Science Process
+answers: [
+Answer(
+answerText: "By focusing on the most complex algorithms"
+correct: false
+answerExplanation: "Focusing on complex algorithms is not the right approach to identify the business objective. The objective should be determined by understanding the business needs and goals."
+),
+Answer(
+answerText: "By discussing with stakeholders and understanding their needs"
+correct: true
+answerExplanation: "Discussing with stakeholders and understanding their needs helps to identify the business objective, as it provides insights into the goals and expectations of the project."
+),
+Answer(answerText: "By collecting as much data as possible"
+correct: false
+answerExplanation: "Collecting data is important, but it does not directly help in identifying the business objective. The objective should be determined by understanding the business needs and goals."
+),
+Answer(
+answerText: "By choosing the most popular data science tools"
+correct: false
+answerExplanation: "Choosing popular data science tools does not help in identifying the business objective. The objective should be determined by understanding the business needs and goals."
+),
+]
+
+error handling better now:
+gptTopicsMatch is null
+PARSE gptTopicsMatch answersMatch RESULTS:
+gptTopicsMatch: null
+
+gptTopicsMatchString is empty
+PARSE FINAL GPTTOPIC RESULTS:
+gptTopics map: {}

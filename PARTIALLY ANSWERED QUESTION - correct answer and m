@@ -1,0 +1,306 @@
+PARTIALLY ANSWERED QUESTION - correct answer and meta info
+
+Fill in everything that is missing below, with one correct answer marked with correct:true, and the incorrect answers marked as correct:false.  
+Add this to the end of the incorrect answers: The correct answer is “FILL IN CORRECT ANSWER TEXT"'
+
+Fill in all of the incorrect answers with answers around the same length as the correct answer, and fill in all of the answer explanations, including the correct one:
+Question(
+  questionId: 'Q02030219',
+  questionNum: 19,
+  questionText: '${Str.interviewQuestionPrompt}:\nHow do you treat outlier values in a dataset?',
+  questionType: 'definition',
+gptQuestion:{'How do you treat outlier values in a dataset?':'general data science definition'},
+gptTopics: {'Outlier Detection':'general data science definition',
+'Data Cleaning':'general data science definition',
+'Data Transformation':'general data science definition',
+},
+  lastCreationTime: '2023-03-30T15:40:13.222',
+  lastSource: 'gpt-4',
+  interviewRelated: false,
+  answers: [
+    Answer(
+      answerId: 'A0203021901',
+      answerNum: 1,
+      correct: false,
+      answerText: '',
+      answerExplained: ''
+    ),
+    Answer(
+      answerId: 'A0203021902',
+      answerNum: 2,
+      correct: true,
+      answerText: 'Identifying outliers, analyzing their impact, and then depending on the results of this previous step choosing the proper treatment method (e.g., removal, transformation, imputation, winsorizing, or keeping).',
+      answerExplained: ''
+    ),
+    Answer(
+      answerId: 'A0203021903',
+      answerNum: 3,
+      correct: false,
+      answerText: '',
+      answerExplained: ''
+    ),
+    Answer(
+      answerId: 'A0203021904',
+      answerNum: 4,
+      correct: false,
+      answerText: '',
+      answerExplained: ''
+    ),
+  ]
+),
+
+
+INTERVIEW QUESTION:
+I want you to act as an interviewer for a Data Scientist job. I will be the candidate and you will ask me an interview question for the position of Senior Data Scientist. The question is:
+
+Discuss three ways to make your model robust to outliers?
+
+Turn this question into a multiple choice question with 3 wrong answers and 1 correct answer being the most ideal answer for that question in the interview. For each answer, provide an explanation why it was right or wrong.  The incorrect answers should all have 3 items to match the question that is asking for 3 ways.
+Put it into the following format below, changing the bool attribute ‘correct’ for the answer this is correct as true.  
+For the gptQuestion map, use the questionText as the key and the Topic for the value.  
+For the gptTopics map, pick out up to 3 closely related topics to the topic as the keys, and for the values use ‘general data science definition’.
+Question( 
+    questionId: Q02030499', 
+questionNum: 10,
+    questionText: 'Discuss three ways to make your model robust to outliers?',
+    questionType: 'multiple-choice',
+    gptQuestion: {'[Discuss ways to make your model robust to outliers?':'general data science definition'},
+    gptTopics: {"related topic": "general data science definition",
+"related topic": "general data science definition",
+"related topic": "general data science definition"},
+    interviewRelated: true, 
+    answers: [
+      Answer(answerId: 'A0203049901', 
+answerNum: 1,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is right or wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+      Answer(answerId: 'A0203049902', 
+answerNum: 2,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is right or wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+      Answer(answerId: A0203049903', 
+answerNum: 3,
+      correct: true,
+      answerText: '(1) Using data preprocessing to apply appropriate scaling and transformation techniques, (2) using robust algorithms like Support Vector Machines (SVM) and ensemble methods like Random Forest, and (3) employing hyperparameter techniques that are known to help like using Lasson or Ridge reggression and specific loss functions like Huber loss or Tukey\'s biweight.',
+      answerExplained: '[put the explanation why this answer is right or wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+      Answer(answerId: 'A0203049904', 
+answerNum: 4,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is right or wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+    ],
+  ),
+
+
+
+
+INTERVIEW QUESTION:
+I want you to act as an interviewer for a Data Scientist job. I will be the candidate and you will ask me an interview question for the position of Senior Data Scientist. The question is:
+
+How regularly must an algorithm be updated?
+
+Turn this question into a multiple choice question with 3 wrong answers and 1 correct answer being the most ideal answer for that question in the interview. For each answer, provide an explanation why it was right or wrong.  The incorrect answers should all have 3 items to match the question that is asking for 3 ways.
+Put it into the following format below, changing the bool attribute ‘correct’ for the answer this is correct as true.  
+For the gptQuestion map, use the questionText as the key and the Topic for the value.  
+For the gptTopics map, pick out up to 3 closely related topics to the topic as the keys, and for the values use ‘general data science definition’.
+Question( 
+    questionId: Q02050699', 
+questionNum: 6,
+    questionText: 'How regularly should an algorithm be updated?',
+    questionType: 'multiple-choice',
+    gptQuestion: {'How regularly should an algorithm be updated?':'general data science definition'},
+    gptTopics: {"Model performance": "general data science definition",
+"Data drift": "general data science definition",
+"Algorithm optimization": "general data science definition"},
+    lastCreationTime: '2023-03-31T08:05:16.533',
+    lastSource: 'manual',
+    interviewRelated: true, 
+    answers: [
+      Answer(answerId: 'A0205069901', 
+	answerNum: 1,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is right or wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+      Answer(answerId: 'A0205069902', 
+		answerNum: 2,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is right or wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+      Answer(answerId: A0205069903', 
+	answerNum: 3,
+      correct: true,
+      answerText: 'It depends on how often and quickly the underlying data is changing and if performance of the model is degrading',
+      answerExplained: 'An algorithm should be updated when its performance degrades or when there are significant changes in the data, as this ensures optimal results.'),
+      Answer(answerId: 'A0205069904', 
+	answerNum: 4,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is right or wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+    ],
+  ),
+
+
+INTERVIEW QUESTION:
+I want you to act as an interviewer for a Data Scientist job. I will be the candidate and you will ask me an interview question for the position of Senior Data Scientist. The question is:
+
+How regularly must an algorithm be updated?
+
+Turn this question into a multiple choice question with 3 wrong answers and 1 correct answer being the most ideal answer for that question in the interview. For each answer, provide an explanation why it was right or wrong.  The incorrect answers should all have 3 items to match the question that is asking for 3 ways.
+Put it into the following format below, changing the bool attribute ‘correct’ for the answer this is correct as true.  
+For the gptQuestion map, use the questionText as the key and the Topic for the value.  
+For the gptTopics map, pick out up to 3 closely related topics to the topic as the keys, and for the values use ‘general data science definition’.
+Question( 
+    questionId: Q02050799', 
+questionNum: 14,
+    questionText: 'How should you maintain a deployed model?',
+    questionType: 'multiple-choice',
+    gptQuestion: {'How should you maintain a deployed model?':'general data science definition'},
+    gptTopics: {"Model performance": "general data science definition",
+"Data drift": "general data science definition",
+"Algorithm optimization": "general data science definition"},
+    lastCreationTime: '2023-03-31T08:05:16.533',
+    lastSource: 'gpt-4',
+    interviewRelated: true, 
+    answers: [
+      Answer(answerId: 'A0205079901', 
+	answerNum: 1,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+      Answer(answerId: 'A0205079902', 
+		answerNum: 2,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+      Answer(answerId: A0205079903', 
+	answerNum: 3,
+      correct: true,
+      answerText: 'Set up a monitoring system that tracks key metrics and helps to determine the relative performance to past models, as well as ongoing rebuilding of the model using current data to avoid model drift',
+      answerExplained: '[put the explanation why this answer is right],
+      Answer(answerId: 'A0205079904', 
+	answerNum: 4,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+    ],
+  ),
+
+
+// Dimensionality reduction is a technique used to reduce the number of features or variables in a dataset while preserving its essential structure and relationships. Benefits include:
+                  //
+                  // 1. Noise reduction: Eliminates irrelevant or redundant features, improving model performance.
+                  // 2. Computational efficiency: Reduces training time and resource requirements for machine learning algorithms.
+                  // 3. Visualization: Makes it easier to visualize high-dimensional data in 2D or 3D space.
+                  // 4. Interpretability: Simplifies models, making them easier to understand and explain.
+INTERVIEW QUESTION:
+I want you to act as an interviewer for a Data Scientist job. I will be the candidate and you will ask me an interview question for the position of Senior Data Scientist. The question is:
+
+What is dimensionality reduction and its benefits?
+
+Turn this question into a multiple choice question with 3 wrong answers and 1 correct answer being the most ideal answer for that question in the interview. For each answer, provide an explanation why it was right or wrong.  The incorrect answers should all have 3 items to match the question that is asking for 3 ways.
+Put it into the following format below, changing the bool attribute ‘correct’ for the answer this is correct as true.  
+For the gptQuestion map, use the questionText as the key and the Topic for the value.  
+For the gptTopics map, pick out up to 3 closely related topics to the topic as the keys, and for the values use ‘general data science definition’.
+Question( 
+    questionId: Q05010799', 
+questionNum: 12,
+    questionText: 'What is dimensionality reduction and its benefits?',
+    questionType: 'multiple-choice',
+    gptQuestion: {'What is dimensionality reduction and its benefits?':'general data science definition'},
+    gptTopics: {'Principal Component Analysis':'general data science definition',
+                        't-Distributed Stochastic Neighbor Embedding':'general data science definition',
+                        'Linear Discriminant Analysis':'general data science definition',
+                      },
+    lastCreationTime: '2023-03-31T08:05:16.533',
+    lastSource: 'gpt-4',
+    interviewRelated: true, 
+    answers: [
+      Answer(answerId: 'A0501079901', 
+	answerNum: 1,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+      Answer(answerId: 'A0501079902', 
+		answerNum: 2,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+      Answer(answerId: A0501079903', 
+	answerNum: 3,
+      correct: true,
+      answerText: 'Dimensionality reduction is a technique used to reduce the number of features or variables in a dataset while preserving its essential structure and relationships. Benefits include noise reduction, computational efficiency, visualization, and interpretability.',
+      answerExplained: 'Reducing features has many benefits, especially for shallow learning machine learning models in resource constrained environments.  It can eliminate irrelevant or redundant features (noise reduction), reduce training time and resource requirements for machine learning algorithms (computational efficiency), make it easier to visualize high-dimensional data in 2D or 3D space, and simplify models in ways that make them easier to understand and explain.',
+      Answer(answerId: 'A0501079904', 
+	answerNum: 4,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+    ],
+  ),
+
+
+INTERVIEW QUESTION:
+I want you to act as an interviewer for a Data Scientist job. I will be the candidate and you will ask me an interview question for the position of Senior Data Scientist. The question is:
+
+What is the importance of batch in machine learning and explain some batch-based gradient descent algorithms?
+
+Turn this question into a multiple choice question with 3 wrong answers and 1 correct answer being the most ideal answer for that question in the interview. For each answer, provide an explanation why it was right or wrong.  The incorrect answers should all have 3 items to match the question that is asking for 3 ways.
+Put it into the following format below, changing the bool attribute ‘correct’ for the answer this is correct as true.  
+For the gptQuestion map, use the questionText as the key and the Topic for the value.  
+For the gptTopics map, pick out up to 3 closely related topics to the topic as the keys, and for the values use ‘general data science definition’.
+Question( 
+    questionId: Q05010799', 
+questionNum: 12,
+    questionText: 'What is the importance of batch in machine learning and explain some batch-based gradient descent algorithms?',
+    questionType: 'multiple-choice',
+    gptQuestion: {'What is the importance of batch in machine learning and explain some batch-based gradient descent algorithms?':'general data science definition'},
+    gptTopics: {'Gradient descent':'general data science definition',
+                        'Optimization algorithms':'general data science definition',
+                        'Machine learning':'general data science definition',
+                      },
+    lastCreationTime: '2023-03-31T08:05:16.533',
+    lastSource: 'gpt-4',
+    interviewRelated: true, 
+    answers: [
+      Answer(answerId: 'A0501079901', 
+	answerNum: 1,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+      Answer(answerId: 'A0501079902', 
+		answerNum: 2,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+      Answer(answerId: A0501079903', 
+	answerNum: 3,
+      correct: true,
+      answerText: 'Batch in machine learning plays a crucial role in optimizing the learning process, computational efficiency, and convergence of the model. The two main batch approaches are Batch Gradient Descent where the entire dataset is used as a single batch for each iteration and Mini-batch Gradient Descent which uses a small subset of data points for each iteration.',
+      answerExplained: '',
+      Answer(answerId: 'A0501079904', 
+	answerNum: 4,
+      correct: false,
+      answerText: '',
+      answerExplained: '[put the explanation why this answer is wrong]'
+'The correct answer is "[put the correct answerText here]"'),
+    ],
+  ),
+
+  
