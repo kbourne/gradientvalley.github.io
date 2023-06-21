@@ -15,6 +15,7 @@ yarn-debug.log*
 yarn-error.log*
 debug.log
 logs/
+.tmp.*
 
 # Ignore editor and IDE files
 .vscode/
