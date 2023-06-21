@@ -2547,6 +2547,7 @@ input, select, textarea {
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
 			background: rgba(52, 27, 43, 0.5);
+			backdrop-filter: blur(10px);
 			color: #fff;
 			display: inline-block;
 			opacity: 0;
