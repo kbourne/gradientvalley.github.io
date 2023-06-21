@@ -2561,7 +2561,6 @@ input, select, textarea {
 				margin: 0 0 2em 0;
 				padding: 3px 0 3px 0;
 			}
-			
 
 				#banner .inner header h2 {
 					border-bottom: solid 2px;
@@ -3273,6 +3272,7 @@ input, select, textarea {
 					background: none;
 					display: block;
 					padding: 0 1.5em;
+					backdrop-filter: blur(10px);
 				}
 
 					#banner .inner header h2 {
